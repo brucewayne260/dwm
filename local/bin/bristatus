@@ -1,0 +1,8 @@
+#! /bin/bash
+
+get=$(brightnessctl get)
+max=$(brightnessctl max)
+
+let "z = (( $get * 100 / $max ))"
+
+echo "  $z%"
