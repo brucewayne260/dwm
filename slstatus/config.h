@@ -66,11 +66,11 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	{ cpu_perc,  "^c#bf616a^   %s%% ",           NULL },
-	{ ram_perc,  "^c#ebcb8b^   %s%% ",           NULL },
+	{ ram_used,  "^c#ebcb8b^   %s",           NULL },
 	{ run_command,  "^c#81a1c1^ %s ",         "batstatus" },
 	{ run_command,  "^c#a3be8c^ %s ",         "volstatus" },
 	{ wifi_essid,  "^c#b48ead^   %s ",       "wlp3s0" },
 	{ run_command,  "^c#ebcb8b^ %s ",         "bristatus" },
-	{ datetime,  "^c#88c0d0^ %s ",         "  %I:%M %p" },
 	{ datetime,  "^c#d8dee9^ %s ",         "  %a %b %d" },
+	{ datetime,  "^c#88c0d0^ %s ",         "  %I:%M %p" },
 };
