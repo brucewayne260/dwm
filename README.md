@@ -4,7 +4,7 @@ My fork of dwm ( inspired by this repo https://github.com/jakob-ristner/dwm )
 ## Requirments
 * xsetroot
 * SauceCodePro Nerd font
-* Material design desktop icons 
+* Nerd Icons
 
 ## Patches
 * statuspadding
@@ -12,6 +12,9 @@ My fork of dwm ( inspired by this repo https://github.com/jakob-ristner/dwm )
 * status2d
 * rainbowtags
 * underlinetags
+* notitle
+* fullgaps
+* shiftview
 
 ## Theme
 * nord

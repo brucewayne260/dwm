@@ -6,8 +6,8 @@ static const unsigned int gappx     = 20;       /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const int horizpadbar        = 7;        /* horizontal padding for statusbar */
-static const int vertpadbar         = 8;        /* vertical padding for statusbar */
+static const int horizpadbar        = 5;        /* horizontal padding for statusbar */
+static const int vertpadbar         = 15;        /* vertical padding for statusbar */
 static const char *fonts[]          = { "SauceCodePro Nerd Font:style=Bold:size=12" };
 static const char dmenufont[]       = "SauceCodePro Nerd Font:style=Bold:size=12";
 static const char col_gray1[]       = "#2e3440";
@@ -27,14 +27,14 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "󰣇", "󰣨", "󰣛", "󱘊", "󰕈" };
+static const char *tags[] = { " ", " ", " ", " ", " " };
 
 static const char *tagsel[][2] = {
-	{ "#88c0d0", col_gray1 },
+	{ col_gray3, col_gray1 },
 	{ "#b48ead", col_gray1 },
 	{ "#81a1c1", col_gray1 },
 	{ "#a3be8c", col_gray1 },
-	{ "#bf616a", col_gray1 },
+	{ "#ebcb8b", col_gray1 },
 };
 
 static const unsigned int ulinepad	= 8;	/* horizontal padding between the underline and tag */

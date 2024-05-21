@@ -818,8 +818,6 @@ drawbar(Monitor *m)
 
 	/* draw status first so it can be overdrawn by tags later */
 	if (m == selmon) { /* status is only drawn on selected monitor */
-		drw_setscheme(drw, scheme[SchemeStatus]);
-		drw_text(drw, m->ww - tw, 0, tw, bh, lrpad / 2, stext, 0);
 		tw = m->ww - drawstatusbar(m, bh, stext);
 	}
 
@@ -834,7 +832,7 @@ drawbar(Monitor *m)
 		drw_setscheme(drw, (((m->tagset[m->seltags] & 1 << i) || (occ & 1 << i)) ? tagscheme[i] : scheme[SchemeTagsNorm]));
 		drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], urg & 1 << i);
 		if (ulineall || m->tagset[m->seltags] & 1 << i) /* if there are conflicts, just move these lines directly underneath both 'drw_setscheme' and 'drw_text' :) */
-			drw_rect(drw, x + ulinepad, bh - ulinestroke - ulinevoffset, w - (ulinepad * 2) + 4, ulinestroke, 1, 0);
+			drw_rect(drw, x + ulinepad, bh - ulinestroke - ulinevoffset, w - (ulinepad * 2) - 3, ulinestroke, 1, 0);
 		x += w;
 	}
 	w = TEXTW(m->ltsymbol);
