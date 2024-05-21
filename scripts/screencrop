@@ -1,3 +1,4 @@
 #! /bin/bash
 
+mkdir ~/Screenshots/
 maim -s | tee ~/Screenshots/$(date +%s).png | xclip -selection clipboard -t image/png

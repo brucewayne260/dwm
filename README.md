@@ -2,6 +2,11 @@
 My fork of dwm ( inspired by this repo https://github.com/jakob-ristner/dwm )
 
 ## Requirments
+* maim
+* brightnessctl
+* feh
+* pipewire
+* ffmpeg
 * xsetroot
 * SauceCodePro Nerd font
 * Nerd Icons
