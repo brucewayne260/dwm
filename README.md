@@ -1,25 +1,27 @@
 # dwm
-My fork of dwm ( inspired by this repo https://github.com/jakob-ristner/dwm )
+My fork of dwm
 
 ## Requirments
 * maim
 * brightnessctl
 * feh
-* pipewire
-* ffmpeg
-* xsetroot
-* SauceCodePro Nerd font
-* Nerd Icons
+* pipewire pulseaudio
+* JetBrainsMono Nerd font
+* ComicShannsMono Nerd font
 
-## Patches
-* statuspadding
+## Dwm patches
+* actualfullscreen
 * colorbar
-* status2d
-* rainbowtags
-* underlinetags
 * notitle
-* fullgaps
+* status2d
+* statuspadding
+* underlinetags
+* uselessgap
 * shiftview
+
+## St patches
+* anysize
+* nordtheme
 
 ## Theme
 * nord

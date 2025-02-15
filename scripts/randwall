@@ -1,6 +1,0 @@
-#! /bin/bash
-if [ -z $1 ]; then
-  feh --recursive --bg-fill --randomize $HOME/Pictures/
-else
-  feh --recursive --bg-fill --randomize $1
-fi

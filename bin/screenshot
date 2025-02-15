@@ -1,0 +1,8 @@
+#! /bin/bash
+
+if [ -d ~/Screenshots ]; then
+	maim $1 | tee ~/Screenshots/$(date +%s).png | xclip -selection clipboard -t image/png
+else
+	mkdir ~/Screenshots
+	maim $1 | tee ~/Screenshots/$(date +%s).png | xclip -selection clipboard -t image/png
+fi

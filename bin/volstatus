@@ -1,0 +1,12 @@
+#! /bin/bash
+
+vol=$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print$5}' | head -n 1 | rev | cut -c2- | rev)
+mute=$(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print$2}')
+
+if [ "$mute" = "yes" ] ; then
+	echo "  $vol%"
+elif (($vol<=30)) ; then
+	echo "  $vol%"
+else
+	echo "  $vol%"
+fi

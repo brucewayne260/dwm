@@ -2,7 +2,7 @@
 
 DIR=$(pwd)
 
-make -C $DIR/dwm clean install
-make -C $DIR/st clean install
-make -C $DIR/slstatus clean install
-make -C $DIR/dmenu clean install
+make -C $DIR/dwm* clean install
+make -C $DIR/st* clean install
+make -C $DIR/slstatus* clean install
+make -C $DIR/dmenu* clean install

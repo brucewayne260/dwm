@@ -1,0 +1,7 @@
+#! /bin/bash
+if [ -z $1 ]; then
+  feh --recursive --bg-max --randomize $HOME/Pictures/
+else
+  feh --bg-max $1
+fi
+  
